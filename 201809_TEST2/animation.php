@@ -7,6 +7,7 @@
   y= 200;
 
 function KeyCode(){
+	document.Mario.style.left= x;
 	if(document.all){
 		kcode = event.keyCode;
 	}else if(document.getElementById){
@@ -46,12 +47,13 @@ function KeyCode(){
 		break;
 	}
 }
-  function moveImage(){
-    document.Mario.style.left= x;
-  }
+//   function moveImage(){
+//     document.Mario.style.left= x;
+//   }
 </script>
 </head>
-<body bgcolor="#f4f8ff" onLoad="setInterval('moveImage()',25)">
+<!-- <body bgcolor="#f4f8ff" onLoad="setInterval('moveImage()',25)"> -->
+<body bgcolor="#f4f8ff">
 
 <h2>TEST2 ANIMATION</h2>
 <img src="imgs/mario_1.png" name="Mario" id='Mario' style="position:absolute;left:300px;top:200px;">
